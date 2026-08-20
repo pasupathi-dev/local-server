@@ -1,0 +1,31 @@
+// Single router that mounts every feature route.
+// app.js only needs: app.use('/api', require('./routes'))
+
+const router = require('express').Router()
+const { verifyToken } = require('../middleware/auth')
+
+router.use('/auth',          require('./authRoutes'))
+router.use('/location',      require('./locationRoutes'))
+router.use('/categories',    require('./categoryRoutes'))
+router.use('/partners',      require('./partnerRoutes'))
+router.use('/requests',      require('./requestRoutes'))
+router.use('/jobs',          require('./jobRoutes'))
+router.use('/messages',      require('./messageRoutes'))
+router.use('/payments',      require('./paymentRoutes'))
+router.use('/wallet',        require('./walletRoutes'))
+router.use('/reviews',       require('./reviewRoutes'))
+router.use('/schedule',      require('./scheduleRoutes'))
+router.use('/notifications', require('./notificationRoutes'))
+router.use('/settings',      require('./settingsRoutes'))
+router.use('/activity',      require('./activityRoutes'))
+router.use('/admin',         require('./adminRoutes'))
+router.use('/config',        require('./configRoutes'))
+router.use('/safety',        require('./safetyRoutes'))
+router.use('/disputes',      require('./disputeRoutes'))
+router.use('/trusted-contacts', require('./trustedContactRoutes'))
+router.use('/favourites',    require('./favouriteRoutes'))
+router.use('/saved-addresses', require('./savedAddressRoutes'))
+router.use('/uploads',       require('./uploadRoutes'))
+router.use('/support',       require('./supportRoutes'))
+
+module.exports = router

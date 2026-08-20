@@ -1,0 +1,28 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies / build output
+node_modules
+dist
+
+# Local env — keep .env.example tracked, everything else out
+.env
+.env.*
+!.env.example
+
+# Firebase Admin service account — NEVER commit
+firebase-service-account.json
+*-service-account.json
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,30 @@
+{
+  "name": "todo-server",
+  "version": "1.0.0",
+  "description": "Express + MySQL backend — stores Firebase uid after login",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cloudinary": "^2.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-validator": "^7.0.1",
+    "firebase-admin": "^12.0.0",
+    "helmet": "^7.1.0",
+    "knex": "^3.2.9",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.22.0",
+    "nodemailer": "^6.9.16",
+    "pdfkit": "^0.15.2",
+    "razorpay": "^2.9.6",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
